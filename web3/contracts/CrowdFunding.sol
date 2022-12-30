@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
+//Structure of Campaign
 contract CrowdFunding {
     struct Campaign {
         address owner;
@@ -18,7 +19,31 @@ contract CrowdFunding {
 
     uint256 public numberOfCampaigns = 0;
 
-    function createCampaign() {}
+//Create new Campaign function
+    function createCampaign(
+        address_owner, 
+        string memory_title, 
+        string memory_description, 
+        uint256_target, 
+        uint256_deadline, 
+        string memory_image) public returns (uint256) {
+            Campaign storage campaign = campaigns[numberOfCampaigns];
+
+            //check to verify campaign structure requirements
+            require(campaign.deadline < block.timestamp, "Error: The deadline should be a date in the future.");
+
+            campaign.owner = _owner;
+            campaign.title = _title;
+            campaign.description = _description;
+            campaign.target = _target;
+            campaign.deadline = _deadline;
+            campaign.amountCollected = 0;
+            campaign.image = _image;
+
+            numberOfCampaigns++;
+
+            return numberOfCampaigns - 1;
+        }
 
     function donateToCampaign() {}
 
