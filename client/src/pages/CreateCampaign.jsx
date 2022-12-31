@@ -17,8 +17,14 @@ const CreateCampaign = () => {
     image: ''
   });
 
-  const handleSubmit = () => {
+  const handleFormFieldChange = (fieldName, e) => {
+    setForm({ ...form, [fieldName]: e.target.value })
+  }
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(form);
   }
 
   return (
@@ -36,14 +42,14 @@ const CreateCampaign = () => {
             placeholder="Aung San Suu Kyi"
             inputType="text"
             value={form.name}
-            handleChange={() => {}}
+            handleChange={(e) => handleFormFieldChange('name', e)}
           />
           <FormField 
             labelName="Campaign Title*"
             placeholder="Burma's Freedom from Fear"
             inputType="text"
             value={form.title}
-            handleChange={() => {}}
+            handleChange={(e) => handleFormFieldChange('title', e)}
           />
         </div>
           <FormField 
@@ -51,34 +57,41 @@ const CreateCampaign = () => {
               placeholder="We need your support to aid the Burmese freedom fighters rise against fascist military dictators!"
               isTextArea
               value={form.description}
-              handleChange={() => {}}
+              handleChange={(e) => handleFormFieldChange('description', e)}
             />
           <div className='w-full flex justify-start items-center p-4 bg-[#8c6dfd] h-[120px] rounded-[10px]'>
             <img src={money} alt="money" className='w-[40px] h-[40px] object-contain' />
             <h4 className='font-epilogue font-bold text-[25px] text-white ml-[20px]'>You will get 100% of successfully raised donations!</h4>
           </div>
-        <div className='flex-2 flex-wrap gap-[40px]'>
+        <div className='flex flex-wrap gap-[40px]'>
           <FormField 
             labelName="Campaign Goal*"
             placeholder="ETH 0.50"
             inputType="text"
             value={form.target}
-            handleChange={() => {}}
+            handleChange={(e) => handleFormFieldChange('target', e)}
           />
           <FormField 
             labelName="Campaign End Date*"
             placeholder="Burma's Freedom from Fear"
             inputType="date"
             value={form.deadline}
-            handleChange={() => {}}
+            handleChange={(e) => handleFormFieldChange('deadline', e)}
           />
-          <div className='flex justify-center items-center mt-[40px]'>
-            <CustomButton 
-              btnType="submit"
-              title="Submit Campaign"
-              styles="bg-[#1dc071] rounded-[100px]"
-            />
-          </div>
+        </div>
+          <FormField 
+            labelName="Campaign Image*"
+            placeholder="Burma's Freedom from Fear"
+            inputType="url"
+            value={form.image}
+            handleChange={(e) => handleFormFieldChange('image', e)}
+          />
+        <div className='flex justify-center items-center mt-[40px]'>
+          <CustomButton 
+            btnType="submit"
+            title="Submit Campaign"
+            styles="bg-[#1dc071] rounded-[100px]"
+          />
         </div>
       </form>
     </div>
