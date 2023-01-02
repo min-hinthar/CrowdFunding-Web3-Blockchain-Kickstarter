@@ -29,9 +29,9 @@ Node.js, Solidity, Web 3.0
 
 
 #### Tech-Stacks
-Frontend : Node.JS, Solidity, CSS3, HTML5
+Frontend : Node.JS, Solidity, CSS3, HTML5, Tailwind
 
-Blockchain, Smart Contracts, Metamask
+Web3, Blockchain, Smart Contracts, Metamask, Goerli Faucet, Solidity
 
 -----
 
