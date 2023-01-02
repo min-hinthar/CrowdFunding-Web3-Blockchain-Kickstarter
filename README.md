@@ -4,7 +4,7 @@ Deployed on NETLIFY Live URL: https://classy-faun-259fc3.netlify.app
 
 ![App Screenshots](./client/src/assets/Crowdfunding_Web3_1.jpeg)
 ![App Screenshots](./client/src/assets/Crowdfunding_Web3_2.jpeg)
-![App Screenshots](./client/src/assets/Crowdfunding_Web3_3.jpeg)
+![App Screenshots](./client/src/assets/Crowdfunding_Web3_3.jpg)
 ![App Screenshots](./client/src/assets/Crowdfunding_Web3_4.jpeg)
 
 ## Table of Contents
