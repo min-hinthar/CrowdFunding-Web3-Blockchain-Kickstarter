@@ -1,8 +1,11 @@
 # Project Title [ CrowdFunding-Web3-Blockchain-Kickstarter ]
 
-Deployed Live URL: 
+Deployed on NETLIFY Live URL: https://classy-faun-259fc3.netlify.app
 
-![App Screenshots](./client/public/)
+![App Screenshots](./client/src/assets/Crowdfunding_Web3_1.jpeg)
+![App Screenshots](./client/src/assets/Crowdfunding_Web3_2.jpeg)
+![App Screenshots](./client/src/assets/Crowdfunding_Web3_3.jpeg)
+![App Screenshots](./client/src/assets/Crowdfunding_Web3_4.jpeg)
 
 ## Table of Contents
 1. [Description](#description)
@@ -59,6 +62,7 @@ MIT
 
 -----
 
+Deployed on NETLIFY Live URL: https://classy-faun-259fc3.netlify.app
 ### Questions 
 
 #### GitHub Username: min-hinthar 
@@ -70,6 +74,3 @@ MIT
 #### Email: min@mandalaymorningstar.com
 
 -----
-
-
-
